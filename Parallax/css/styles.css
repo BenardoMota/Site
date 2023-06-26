@@ -63,6 +63,44 @@ section.module.parallax{
   -moz-background-size: cover;
 }
 
+section.module.parallax:after{
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 8;
+  background: -moz-linear-gradient(to bottom,rgba(0,0,0,0) 40%, #000 100%);
+  background: -wekit-linear-gradient(to bottom,rgba(0,0,0,0) 40%, #000 100%);
+  background: linear-gradient(to bottom,rgba(0,0,0,0) 40%, #000 100%);
+}
+
 section.module.parallax-1{
   background-image: url("https://images3.alphacoders.com/575/thumb-1920-575608.jpg");
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+}
+
+.parallax-1 h1{
+  color: #fff;
+  position: absolute;
+  top: 100px;
+
+}
+
+section.module.parallax-2{
+  background-image: url("https://free4kwallpapers.com/uploads/originals/2022/03/26/planets-colorful-nebula-surface-wallpaper.jpg");
+}
+
+section.module.parallax-3{
+  background-image: url("https://wallpaperaccess.com/full/47178.jpg");
+}
+
+section.module.parallaxh1{
+  color: #FFF;
+  text-allign: center;
+  font-size: 78px;
+  z-index: 50;
+  text-transform: uppercase;
 }
